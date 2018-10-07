@@ -1,6 +1,6 @@
 class CreateMessages < ActiveRecord::Migration[5.2]
   def change
-    create_table :tasks do |t|
+    create_table :task_params do |t|
       t.string :content
 
       t.timestamps

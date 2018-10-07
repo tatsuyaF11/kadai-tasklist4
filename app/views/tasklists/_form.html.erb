@@ -1,7 +1,7 @@
 <div class= "row">
   <div class="col-xs-12 col-sm-8 col-lg-6">
 
-<% form_for(message) do |f| %>
+<% form_for(task) do |f| %>
 
 <% if message.errors.any? %>
 
@@ -30,7 +30,7 @@
 
     <div class="form-group">
     
-<%= f.label :content, 'メッセージ' %>
+<%= f.label :content, 'タスク' %>
 
 <%= f.text_field :content, class: 'form-control' %>
 
