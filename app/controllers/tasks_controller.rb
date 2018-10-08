@@ -1,6 +1,10 @@
 class TasksController < ApplicationController
+  def task_params
+    params.require(:task).permit(:content, :title)
+  end
+  
   def index
-    @tasks = Task.all
+    @tasks = Tasks.all
   end
 
   def show
@@ -21,5 +25,3 @@ class TasksController < ApplicationController
   def destroy
   end
 end
-
-  
